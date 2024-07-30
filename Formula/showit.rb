@@ -5,20 +5,20 @@
 class Showit < Formula
   desc ""
   homepage ""
-  version "0.0.4-alpha3"
+  version "0.0.5"
 
   on_macos do
     on_intel do
-      url "https://github.com/rossedman/showit/releases/download/v0.0.4-alpha3/showit_Darwin_x86_64.tar.gz"
-      sha256 "fe03648ade0da55ae836289f976e1e4a4f27d71bdeef9776479bb56043006aa2"
+      url "https://github.com/rossedman/showit/releases/download/v0.0.5/showit_Darwin_x86_64.tar.gz"
+      sha256 "67b0cee39057f32f45ef33024dab313317d1317da16d068edd237c7c80efea79"
 
       def install
         bin.install "showit"
       end
     end
     on_arm do
-      url "https://github.com/rossedman/showit/releases/download/v0.0.4-alpha3/showit_Darwin_arm64.tar.gz"
-      sha256 "b96eb848d69b1f5cb4f6ec08c4a57799552a9d512089d38bc2cb20cebdcf0cf6"
+      url "https://github.com/rossedman/showit/releases/download/v0.0.5/showit_Darwin_arm64.tar.gz"
+      sha256 "e7feea29019160a31331bc7169f834585ab8e07e95515b5bfa9fae992b8052d2"
 
       def install
         bin.install "showit"
@@ -29,8 +29,8 @@ class Showit < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/rossedman/showit/releases/download/v0.0.4-alpha3/showit_Linux_x86_64.tar.gz"
-        sha256 "e1201e6a7c8d15df8630bfa466f23c393f7d550ebae653f1d1cb265b5a3a0bbe"
+        url "https://github.com/rossedman/showit/releases/download/v0.0.5/showit_Linux_x86_64.tar.gz"
+        sha256 "13dc99012da23f8a2b74b5276fe426540e37de5255638aa46defe5412a5d802c"
 
         def install
           bin.install "showit"
@@ -39,8 +39,8 @@ class Showit < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/rossedman/showit/releases/download/v0.0.4-alpha3/showit_Linux_arm64.tar.gz"
-        sha256 "4c618368fa08b5b309a3d75cf88cef51747eca3cecb663567844cbd4c8ecc9e3"
+        url "https://github.com/rossedman/showit/releases/download/v0.0.5/showit_Linux_arm64.tar.gz"
+        sha256 "29f5663b9c93589e8a7e9a58b5432dfdbcb401bb77b8d232fa39ad18eae9144a"
 
         def install
           bin.install "showit"
