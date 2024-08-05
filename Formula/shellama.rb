@@ -5,20 +5,20 @@
 class Shellama < Formula
   desc ""
   homepage ""
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     on_intel do
-      url "https://github.com/rossedman/shellama/releases/download/v0.0.1/shellama_Darwin_x86_64.tar.gz"
-      sha256 "0dc5bdb6e05020f57d2df91c974df6dcd3122f4b10e3fd03d79caaf46289aafd"
+      url "https://github.com/rossedman/shellama/releases/download/v0.0.2/shellama_Darwin_x86_64.tar.gz"
+      sha256 "30b953ece1828b371f4e956827a8234d97acb440abb058fbb49c607d19d18591"
 
       def install
         bin.install "shellama"
       end
     end
     on_arm do
-      url "https://github.com/rossedman/shellama/releases/download/v0.0.1/shellama_Darwin_arm64.tar.gz"
-      sha256 "b7f677e3478244cf4611bceb772c2b8b8be18671926966d2381a6c25bab42bed"
+      url "https://github.com/rossedman/shellama/releases/download/v0.0.2/shellama_Darwin_arm64.tar.gz"
+      sha256 "3a4a68d9591336452bf79e5126b072f403e57eda4ea6f92fcfff8a290e7c42bb"
 
       def install
         bin.install "shellama"
@@ -29,8 +29,8 @@ class Shellama < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/rossedman/shellama/releases/download/v0.0.1/shellama_Linux_x86_64.tar.gz"
-        sha256 "00eb956b35ad69b828a2e66ad498504c59356a3d514b5e8f2711249641dd1f8e"
+        url "https://github.com/rossedman/shellama/releases/download/v0.0.2/shellama_Linux_x86_64.tar.gz"
+        sha256 "7f894be065a6067964969e8df3bff2b67e783bbc27ab53340ba09fa6e9f4caa0"
 
         def install
           bin.install "shellama"
@@ -39,8 +39,8 @@ class Shellama < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/rossedman/shellama/releases/download/v0.0.1/shellama_Linux_arm64.tar.gz"
-        sha256 "e5b8692e545db0ce7249f6d46fe7b1672ee6f8a1307afd6cd4c94821a66038c3"
+        url "https://github.com/rossedman/shellama/releases/download/v0.0.2/shellama_Linux_arm64.tar.gz"
+        sha256 "d1b129b8e3b73d500dc9ba3ad0cba070fef95bc460953e87c1d9fbbdf3839423"
 
         def install
           bin.install "shellama"
