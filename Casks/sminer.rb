@@ -37,9 +37,9 @@ cask "sminer" do
   fish_completion "completions/sminer.fish"
   zsh_completion "completions/sminer.zsh"
 
-  postflight do
-    if OS.mac?
-      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/sminer"]
+  postflight_steps do
+    on_macos do
+      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "sminer"], chdir: "."
     end
   end
 

@@ -20,9 +20,9 @@ cask "limabean" do
 
   binary "limabean"
 
-  postflight do
-    if OS.mac?
-      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/limabean"]
+  postflight_steps do
+    on_macos do
+      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "limabean"], chdir: "."
     end
   end
 
