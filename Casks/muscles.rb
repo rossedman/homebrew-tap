@@ -37,9 +37,9 @@ cask "muscles" do
   fish_completion "completions/muscles.fish"
   zsh_completion "completions/muscles.zsh"
 
-  postflight do
-    if OS.mac?
-      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/muscles"]
+  postflight_steps do
+    on_macos do
+      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/muscles"]
     end
   end
 
