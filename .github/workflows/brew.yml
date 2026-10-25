@@ -25,8 +25,7 @@ jobs:
       # Taps this checkout as rossedman/tap.
       - uses: Homebrew/actions/setup-homebrew@eb02c69dbabdb66ff183c614f4ce7ab3c077592c # 2026.10.12.1
 
-      - name: brew style
-        run: brew style rossedman/tap
-
+      # Only readall: brew style flags the stanza order and indentation GoReleaser
+      # generates, and hand edits to Casks/ are overwritten on the next release.
       - name: brew readall
         run: brew readall --os=all --arch=all rossedman/tap

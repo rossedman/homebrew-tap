@@ -19,7 +19,6 @@ You need [Homebrew](https://brew.sh) on macOS or Linux. Tap your clone, then run
 git clone https://github.com/rossedman/homebrew-tap
 cd homebrew-tap
 brew tap rossedman/tap "$PWD"
-brew style rossedman/tap
 brew readall --os=all --arch=all rossedman/tap
 ```
 
