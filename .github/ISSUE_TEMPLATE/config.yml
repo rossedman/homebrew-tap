@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/rossedman/homebrew-tap/security/advisories/new
+    about: Report security problems with the tap privately, as described in the security policy.
+  - name: Bug or idea for a tool
+    url: https://github.com/rossedman/homebrew-tap#packages
+    about: Problems with how a tool behaves go to its own repository, linked from the Packages table.

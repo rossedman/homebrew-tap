@@ -24,8 +24,12 @@ brew install rossedman/tap/limabean
 | Package | Type | Platforms | Description |
 |---|---|---|---|
 | [limabean](https://github.com/rossedman/limabean) | Cask | macOS | Disposable Ubuntu dev VMs on your Mac, built on [Lima](https://lima-vm.io). Version-pinned toolchains, keys that never leave your Mac, and an MCP server so Claude can drive it. Installs Lima too. |
+| [muscles](https://github.com/rossedman/muscles) | Cask | macOS, Linux | Explain container images, layer by layer. |
+| [sarifix](https://github.com/rossedman/sarifix) | Cask | macOS, Linux | Turn any SARIF scanner into a verified auto-fixer. |
+| [sminer](https://github.com/rossedman/sminer) | Cask | macOS, Linux | Find the corrections you keep making to Claude, and fix them for good. |
+| [tfmetrics](https://github.com/rossedman/tfmetrics) | Cask | macOS, Linux | Org-wide metrics from statically parsed Terraform repos. |
 
-Upgrade with `brew upgrade rossedman/tap/limabean`.
+Upgrade with `brew update && brew upgrade rossedman/tap/<package>`.
 
 ## Other projects
 
@@ -54,6 +58,10 @@ Not everything I build ships through Homebrew. Some of the rest:
 
 - [imagegate](https://github.com/rossedman/imagegate): a Docker authorization plugin that only allows cosign-signed images with a signed SBOM.
 - [kubectl-endoflife](https://github.com/rossedman/kubectl-endoflife): a kubectl plugin that reports end-of-life information for your cluster.
+
+## Contributing
+
+The casks are generated on release, so changes to a package go to its own repository. See [CONTRIBUTING.md](CONTRIBUTING.md) for how to report install problems and check changes, and the [security policy](SECURITY.md) to report a vulnerability. Everyone taking part follows the [code of conduct](CODE_OF_CONDUCT.md).
 
 ## License
 

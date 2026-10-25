@@ -1,0 +1,4 @@
+* text=auto eol=lf
+
+# Written by GoReleaser on each release.
+Casks/*.rb linguist-generated=true
